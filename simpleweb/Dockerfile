@@ -1,5 +1,8 @@
 #base image
-FROM alpine
+FROM node:alpine
+
+#copy build files
+COPY ./ ./
 
 #install dependencies
 RUN npm install
